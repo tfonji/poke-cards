@@ -5,7 +5,7 @@
 			<div class="col-md-6">
 				<div>
 					<input ng-model="pokeId" id="userInput" type="text">
-					<button ng-click="getPokeData()" class="btn btn-success btn-sm"
+					<button ng-click="getPokeData(); check=!check" class="btn btn-success btn-sm"
 						id="submitButton">Get PokeData!</button>
 				</div>
 			</div>
@@ -37,10 +37,10 @@
 							ng-true-value="'YES'" ng-false-value="'NO'"> <label
 							for="checkbox5">Types</label></li>
 						<li class="list-group-item align-right">
-							<button ng-click="getCardData(); showCard();"
-								type="submit" id="showSubmit" class="btn btn-success">Submit</button>
+							<button ng-controller="dataController" ng-click="getCardData(); showCard();"
+							ng-disabled="submitButton.value" type="submit" class="btn btn-success">Submit</button>
 								<a ng-controller="displayController" ng-click="displayCard()"
-							id="showCard" class="btn btn-info">show card</a>
+							 ng-disabled="showCardButton.value" class="btn btn-info">show card</a>
 						</li>
 
 					</fieldset>
@@ -83,7 +83,3 @@
 		</div>
 	</div>
 </div>
-
-
-
-
