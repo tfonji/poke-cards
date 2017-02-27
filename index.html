@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="pokecards">
+<head>
+<meta charset="UTF-8">
+<title>Poké-Cards</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--for viewport, match screen's width in device independent pixels
+      and establish a 1:1 relationship between device independ pixels and css pixels-->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<!--Material Design Bootstrap-->
+<link type="text/css" href="css/mdb.min.css" rel="stylesheet" media="screen, print">
+<link type="text/css" rel="stylesheet" href="css/styles.css" media="screen, print">
+<link rel="canonical" href="http://www.superpencil.com/work/pokemon-font">
+</head>
+<body>
+	<div class="container-fluid">
+	<div class="row" id="set-height">
+			<div class="col-md-12">
+				<nav class="navbar navbar-fixed-top navbar-light lighten-4"
+					id="navbar-color">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<button type="button" class="btn btn-primary poke-stats">Poké-Cards</button>
+								<a class="btn btn-success align-right poke-stats"
+									id="repoButton" href="#" target="_blank">Repo</a> <a
+									class="btn btn-info align-right poke-stats"
+									href="https://pokeapi.co/" target="_blank">API in use</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+  <data-ui-view></data-ui-view>
+  </div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controllers.js"></script>
+		<script src="services.js"></script>
+</html>

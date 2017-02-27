@@ -1,0 +1,89 @@
+
+<div class="row">
+	<div class="col-md-6">
+		<div ng-controller="dataController" class="row left-side-rows">
+			<div class="col-md-6">
+				<div>
+					<input ng-model="pokeId" id="userInput" type="text">
+					<button ng-click="getPokeData()" class="btn btn-success btn-sm"
+						id="submitButton">Get PokeData!</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row left-side-rows">
+			<div class="col-md-6 form-check">
+				<ul class="list-group">
+					<fieldset class="form-group">
+						<li class="list-group-item"><input type="checkbox"
+							id="checkbox1" ng-model="heightValue" ng-true-value="'YES'"
+							ng-false-value="'NO'"> <label for="checkbox1">height</label>
+						</li>
+
+						<li class="list-group-item form-check-label"><input
+							type="checkbox" id="checkbox2" ng-model="weightValue"
+							ng-true-value="'YES'" ng-false-value="'NO'"> <label
+							for="checkbox2">weight</label></li>
+						<li class="list-group-item form-check-label"><input
+							type="checkbox" id="checkbox3" ng-model="movesValue"
+							ng-true-value="'YES'" ng-false-value="'NO'"> <label
+							for="checkbox3">Number of Moves</label></li>
+						<li class="list-group-item form-check-label"><input
+							type="checkbox" id="checkbox4" ng-model="baseExpValue"
+							ng-true-value="'YES'" ng-false-value="'NO'"> <label
+							for="checkbox4">Base Experience</label></li>
+						<li class="list-group-item form-check-label"><input
+							type="checkbox" id="checkbox5" ng-model="typeValue"
+							ng-true-value="'YES'" ng-false-value="'NO'"> <label
+							for="checkbox5">Types</label></li>
+						<li class="list-group-item align-right">
+							<button ng-click="getCardData(); showCard();"
+								type="submit" id="showSubmit" class="btn btn-success">Submit</button>
+								<a ng-controller="displayController" ng-click="displayCard()"
+							id="showCard" class="btn btn-info">show card</a>
+						</li>
+
+					</fieldset>
+
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="col-md-6">
+		<div class="col-md-6">
+			<!--Card-->
+			<div class="card card-cascade" style="background: #00BCD4;"
+				id="printThis">
+				<!--Card image-->
+				<div class="view overlay hm-white-slight">
+					<img ng-src="{{imageSource}}" class="img-fluid" alt=""> <a>
+						<div class="mask waves-effect waves-light"></div>
+					</a>
+				</div>
+				<!--/.Card image-->
+				<!--Card content-->
+				<div class="card-block text-center">
+					<!--Title-->
+					<h4 class="card-title">
+						<strong>{{pokemonName}}</strong>
+					</h4>
+					<p class="card-text">{{pokemonHeight}}</p>
+					<p class="card-text">{{pokemonWeight}}</p>
+					<p class="card-text">{{pokemonMoves}}</p>
+					<p class="card-text">{{pokemonBaseExp}}</p>
+					<p class="card-text">{{pokemonTypes}}</p>
+				</div>
+				<!--/.Card content-->
+
+			</div>
+			<!--/.Card-->
+
+		</div>
+	</div>
+</div>
+
+
+
+

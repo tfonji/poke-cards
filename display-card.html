@@ -1,0 +1,31 @@
+<a data-ui-sref="poke-data" id="showCard" class="btn btn-info">show card</a>
+<div class="col-md-6">
+			<div class="col-md-6">
+					<!--Card-->
+					<div class="card card-cascade" style="background:#00BCD4;" id="printThis">
+						<!--Card image-->
+						<div class="view overlay hm-white-slight">
+							<img ng-src="{{imageSource}}" class="img-fluid" alt=""> <a>
+								<div class="mask waves-effect waves-light"></div>
+							</a>
+						</div>
+						<!--/.Card image-->
+						<!--Card content-->
+						<div class="card-block text-center">
+							<!--Title-->
+							<h4 class="card-title">
+								<strong>{{pokemonName}}</strong>
+							</h4>
+							<p class="card-text">{{pokemonHeight}}</p>
+							<p class="card-text">{{pokemonWeight}}</p>
+							<p class="card-text">{{pokemonMoves}}</p>
+							<p class="card-text">{{pokemonBaseExp}}</p>
+							<p class="card-text">{{pokemonTypes}}</p>
+								</div>
+						<!--/.Card content-->
+
+					</div>
+					<!--/.Card-->
+
+				</div>
+			</div>

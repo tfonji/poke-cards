@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+body {
+	background-color: #F5F5F5;
+	font-size: 20px;
+font-smooth: never;
+-webkit-font-smoothing: none;
+font-family: 'pokemon-font', monospace;
+}
+
+.left-side-rows {
+	padding-top: 1%;
+}
+.chart-window {
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#navbar-color {
+    background-color: #FFD54F;
+}
+#set-height {
+    height: 60px;
+}
+
+.poke-stats {
+	padding-top:7px;
+	margin-top: 8px;
+	padding-left: 12px;
+	margin-left: 6px;
+	padding-right: 12px;
+	margin-right: 6px;
+}
+
+.align-right {
+    text-align: right;
+    float: right;
+}
+
+.btn-success {
+	border-color: #37474F;
+	background-color: #37474F;
+}
+
+.btn-info {
+	border-color: #37474F;
+	background-color: #37474F;
+}
+
+.btn-primary {
+	border-color: #004D40;
+	background-color: #004D40;
+}
+
+@media screen {
+    #printSection {
+        display: none;
+    }
+}
+
+@media print {
+    body * {
+        visibility:hidden;
+    }
+    #printSection, #printSection * {
+        visibility:visible;
+    }
+    #printSection {
+        position:absolute;
+        left:0;
+        top:0;
+    }
+}
+
