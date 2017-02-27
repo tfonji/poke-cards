@@ -58,23 +58,6 @@ font-family: 'pokemon-font', monospace;
 	background-color: #004D40;
 }
 
-@media screen {
-    #printSection {
-        display: none;
-    }
+.card-title {
+	font-size: 40px;
 }
-
-@media print {
-    body * {
-        visibility:hidden;
-    }
-    #printSection, #printSection * {
-        visibility:visible;
-    }
-    #printSection {
-        position:absolute;
-        left:0;
-        top:0;
-    }
-}
-
